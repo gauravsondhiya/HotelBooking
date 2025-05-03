@@ -25,7 +25,7 @@ const DummyHome = () => {
           </span>
         </div>
         {/* images */}
-        <div className="grid sm:grid-cols-3 gap-4 mt-5">
+        <div className="grid sm:grid-cols-3 gap-3 mt-5">
           {exclusiveOffers.map((e) => (
             <div
               key={e._id}
@@ -47,13 +47,16 @@ const DummyHome = () => {
     </div>
       
       {/* what our guest say */}
-      <div className="bg-blue-100 h-[650px] mt-24">
-        <div className="w-[90%] border border-black m-auto">
-        <div className="text-center mt-28">
-            <h1 className="text-3xl font-bold">What Our Guests Say</h1>
+      <div className="bg-blue-100 h-[650px] mt-28">
+        <div className="w-[90%] m-auto">
+
+        <div className="text-center border border-blue-100 ">
+            <h1 className="text-3xl font-bold mt-20">What Our Guests Say</h1>
             <p className="text-xl mt-5 m-auto w-[50%] ">Discover why discerning travelers choose
                QuickStay for their luxury accommodations around the world.</p>
            </div>
+
+
            <div className="grid grid-cols-3 gap-3 m-auto mt-9">
            {
             testimonials.map((e)=>(
@@ -74,15 +77,38 @@ const DummyHome = () => {
               </div>
             ))
            }
+
            </div>
         </div>
           
            
       </div>
       {/* black box */}
-      <div>
+      <div className="mt-9 border border-green-800  
+      bg-[#111827] w-[1079px] h-[400px] m-auto rounded-2xl text-white
+      flex flex-col justify-center items-center gap-4 text-center">
+  
+  <p className="text-4xl">Stay Inspired</p>
+  <p className="max-w-[600px]">
+    Join our newsletter and be the first to discover new 
+    destinations, exclusive offers, and travel inspiration.
+  </p>
+  
+  <div className="flex gap-2">
+    <input
+      type="text"
+      placeholder="Enter your Email"
+      className="px-4 py-2 rounded text-white"
+    />
+    <button className="bg-green-800 text-white px-4 py-2 rounded">Subscribe</button>
+  </div>
+  
+  <p className="max-w-[600px] text-sm">
+    By subscribing, you agree to our Privacy Policy and consent to receive updates.
+  </p>
 
-      </div>
+</div>
+
       </>
   );
 };
