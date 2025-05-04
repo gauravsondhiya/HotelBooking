@@ -6,13 +6,10 @@ import { FaSearch } from "react-icons/fa";
 import { assets } from "./assets/assets";
 const Navbar = () => {
   let [btn, setbtn] = useState(false);
-
-  console.log(btn);
-
   return (
     <>
 
-    <div className="hidden sm:flex justify-around border border-black  p-4 mt-3">
+    <div className="hidden fixed sm:flex justify-around  w-[100%] bg-white p-4 shadow-xl ">
        <div>
         <img src={assets.logo} alt="logo" className="bg-black"/>
        </div>
@@ -40,7 +37,8 @@ const Navbar = () => {
            <FiAlignCenter />
         </button>
         <ul
-            className={`text-center font-bold text-xl absolute  left-0 h-full w-full bg-white shadow-xl transform transition-transform duration-700 ease-in-out ${
+            className={`text-center font-bold text-xl absolute  left-0 h-full w-full
+               bg-white shadow-xl transform transition-transform duration-700 ease-in-out ${
               btn ? "translate-x-0" : "-translate-x-full"
             }`}
           >

@@ -71,7 +71,7 @@ const DummyHome = () => {
               
                </div>
                <p className="flex">{Array.from({ length: e.rating }).map(() =>(
-                <p>⭐</p>
+                "⭐"
                ))}</p>
                <p className="text-wrap text-[14px] font-semibold">{e.review}</p>
               </div>
