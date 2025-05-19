@@ -1,5 +1,5 @@
 import React from 'react'
-import {assets} from './assets/assets.js'
+import {assets} from '../assets/assets.js'
 const Footer = () => {
   return (
     <div className='bg-blue-100 sm:h-[330px] mt-5'>

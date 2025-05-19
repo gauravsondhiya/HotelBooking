@@ -1,7 +1,7 @@
 import React from "react";
-import { assets } from "./assets/assets.js";
-import { exclusiveOffers } from "./assets/assets.js";
-import { testimonials } from "./assets/assets.js";
+import { assets } from "../assets/assets.js";
+import { exclusiveOffers } from "../assets/assets.js";
+import { testimonials } from "../assets/assets.js";
 const DummyHome = () => {
   return (
     <>

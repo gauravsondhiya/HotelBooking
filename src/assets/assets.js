@@ -97,11 +97,11 @@ export const testimonials = [
 
 // Facility Icon
 export const facilityIcons = {
-    "Free WiFi": assets.freeWifiIcon,
-    "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.roomServiceIcon,
-    "Mountain View": assets.mountainIcon,
-    "Pool Access": assets.poolIcon,
+    "FreeWiFi": assets.freeWifiIcon,
+    "FreeBreakfast": assets.freeBreakfastIcon,
+    "RoomService": assets.roomServiceIcon,
+    "MountainView": assets.mountainIcon,
+    "PoolAccess": assets.poolIcon,
 };
 
 // For Room Details Page
@@ -144,10 +144,11 @@ export const hotelDummyData = {
 export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
+        "hotelname":'Opulent Oasis',
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -156,10 +157,11 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76452197ac559e4089b8e",
+        "hotelname":'Majestic Manor',
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -168,6 +170,7 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76406197ac559e4089b82",
+        "hotelname":'Luxe Lagoon,',
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
@@ -180,6 +183,7 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f763d8197ac559e4089b7a",
+        "hotelname":'Regal Retreat,',
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,

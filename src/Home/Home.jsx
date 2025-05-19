@@ -1,10 +1,9 @@
 import React from "react";
-import heroimage from "./assets/heroImage.png";
-import Destination from "./Destination";
+import DummyHome from "./DummyHome";
 const Home = () => {
   return (
     <>
-    <div className="bg-[url('./assets/heroImage.png')] bg-cover bg-center h-screen  border-red-800">
+    <div className="bg-[url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center h-screen  border-red-800">
       <div
         className="m-auto text-white  h-[100%] w-[90%] flex flex-col content-center justify-center
          border-red-800 [&>p,h1]:mt-4"
@@ -47,7 +46,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  <Destination/>
+  <DummyHome/>
     </>
   );
 };

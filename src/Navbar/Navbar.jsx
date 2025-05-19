@@ -3,7 +3,8 @@ import { FiAlignCenter } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import { FaHome } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
-import { assets } from "./assets/assets";
+import { assets } from "../assets/assets";
+import { NavLink } from "react-router"
 const Navbar = () => {
   let [btn, setbtn] = useState(false);
   return (
@@ -15,16 +16,16 @@ const Navbar = () => {
        </div>
        <div>
         <ul className="flex gap-4">
-            <li>Home</li>
-            <li>Hotels</li>
-            <li>Experience</li>
-            <li>About</li>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/List">Hotels</NavLink>
+            <NavLink>Experience</NavLink>
+            <NavLink>About</NavLink>
           </ul>
      </div>
        <div >
         <ul className="flex gap-4  text-xl">
-          <li className="m-auto"><FaSearch /></li>
-          <li><button>Login</button></li>
+          <NavLink className="m-auto"><FaSearch /></NavLink>
+          <NavLink><button>Login</button></NavLink>
         </ul> 
        </div>
     </div>
@@ -33,8 +34,8 @@ const Navbar = () => {
       <div className="sm:hidden  border border-black p-3 flex justify-around text-2xl">
 
         <FaHome />
-        <button onClick={() => setbtn(!btn)}>
-           <FiAlignCenter />
+        <button onCNavLinkck={() => setbtn(!btn)}>
+           <FiAlignCenter />gggg
         </button>
         <ul
             className={`text-center font-bold text-xl absolute  left-0 h-full w-full
@@ -42,16 +43,16 @@ const Navbar = () => {
               btn ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <button className="text-4xl ml-[80%]" onClick={() => setbtn(!btn)}>
+            <button className="text-4xl ml-[80%]" onCNavLinkck={() => setbtn(!btn)}>
             <FiX />
         </button>
-            <li>Home</li>
-            <li>Hotels</li>
-            <li>Experience</li>
-            <li>About</li>
-            <li>
+            <NavLink>Home</NavLink>
+            <NavLink>Hotels</NavLink>
+            <NavLink>Experience</NavLink>
+            <NavLink>About</NavLink>
+            <NavLink>
               <button>Login</button>
-            </li>
+            </NavLink>
           </ul>
       </div>
     </>
